@@ -1,0 +1,8 @@
+[default]
+    LOG_TO_CONSOLE = true
+    LOG_TO_FILE = false
+    ENABLE_DOCS = true
+
+    SLACK_USER_TOKEN = ""
+
+    LOG_DEBOUNCING = false

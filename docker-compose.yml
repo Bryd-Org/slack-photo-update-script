@@ -1,0 +1,16 @@
+services:
+  update-user-photos:
+    build: .
+    volumes:
+      - ./instructions:/app/instructions
+      - ./.secrets.toml:/app/.secrets.toml
+    command: uv run main.py update-user-photos
+    restart: "no"
+
+  test:
+    build: .
+    volumes:
+      - ./instructions:/app/instructions
+      - ./.secrets.toml:/app/.secrets.toml
+    command: uv run main.py test
+    restart: "no"
