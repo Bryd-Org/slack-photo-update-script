@@ -34,12 +34,6 @@ async def selftest():
 @app.command(name="test")
 def container_test():
     instructions_files = [
-        "instructions/add_to_channels.csv",
-        "instructions/assign_roles.csv",
-        "instructions/invalidate_email.csv",
-        "instructions/invite_new_users.csv",
-        "instructions/activate_users.csv",
-        "instructions/change_emails.csv",
         "instructions/update_user_photos.csv",
     ]
 

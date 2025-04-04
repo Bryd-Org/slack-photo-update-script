@@ -6,7 +6,7 @@ ENV UV_CACHE_DIR=./.uv-cache
 
 WORKDIR $WORKDIR_PATH
 #RUN apt-get update -y
-RUN pip install uv
+COPY --from=ghcr.io/astral-sh/uv:0.5.31 /uv /uvx /bin/
 
 COPY ./pyproject.toml .
 COPY ./uv.lock .
