@@ -70,7 +70,7 @@ This script updates the profile photos of users based on the provided instructio
 
 1. **Prepare the instructions file**  
    - Open the `instructions/update_photos.csv` file.  
-   - Populate it with `user_email` and `photo_url` values.
+   - Populate it with `user_email` and `photo_url` (should be a valid JPG file) values.
    - Each line represents a single user and their new photo URL.
    
 2. **Run process**  
